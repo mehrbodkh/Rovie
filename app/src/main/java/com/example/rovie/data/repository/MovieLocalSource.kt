@@ -1,11 +1,16 @@
 package com.example.rovie.data.repository
 
 import com.example.rovie.data.models.Movie
+import com.example.rovie.data.models.MovieDetails
 import javax.inject.Inject
 
-class MovieLocalSource @Inject constructor() {
+class MovieLocalSource @Inject constructor() : MovieSource {
 
-    suspend fun fetchLatestMovies(): List<Movie> {
+    override suspend fun fetchLatestMovies(): List<Movie> {
         return emptyList()
+    }
+
+    override suspend fun fetchMovieDetails(movieId: Int): MovieDetails {
+        TODO("Not yet implemented")
     }
 }

@@ -4,13 +4,13 @@ import com.example.rovie.data.api.ApiService
 import com.example.rovie.data.models.Movie
 import com.example.rovie.data.models.MovieDetails
 
-class MovieRemoteSource(private val apiService: ApiService) {
+class MovieRemoteSource(private val apiService: ApiService) : MovieSource {
 
-    suspend fun fetchLatestMovies(): List<Movie> {
+    override suspend fun fetchLatestMovies(): List<Movie> {
         return apiService.getLatestMovies().movies
     }
 
-    suspend fun fetchMovieDetails(movieId: Int): MovieDetails {
+    override suspend fun fetchMovieDetails(movieId: Int): MovieDetails {
         return apiService.getMovieDetails(movieId)
     }
 }
