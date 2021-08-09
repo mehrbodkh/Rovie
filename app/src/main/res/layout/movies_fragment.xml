@@ -14,7 +14,7 @@
         android:padding="?attr/spaceSmall"
         android:clipToPadding="false"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/temporaryButton"
+        app:layout_constraintBottom_toTopOf="@id/addDetailButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:visibility="gone"/>
@@ -30,13 +30,13 @@
         android:visibility="gone"/>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/temporaryButton"
+        android:id="@+id/addDetailButton"
         android:layout_width="0dp"
         android:layout_height="56dp"
         android:layout_marginStart="?attr/spaceLarge"
         android:layout_marginEnd="?attr/spaceLarge"
         android:layout_marginBottom="?attr/spaceSmall"
-        android:text="Temporary"
+        android:text="@string/add_details"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
