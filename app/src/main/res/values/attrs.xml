@@ -8,4 +8,6 @@
     <attr name="spaceXLarge" format="dimension|reference" />
     <attr name="space2XLarge" format="dimension|reference" />
     <attr name="space3XLarge" format="dimension|reference" />
+
+    <attr name="buttonHeightLarge" format="dimension|reference" />
 </resources>

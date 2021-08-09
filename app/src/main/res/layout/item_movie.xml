@@ -6,8 +6,8 @@
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/cover"
-        android:layout_width="128dp"
-        android:layout_height="160dp"
+        android:layout_width="@dimen/item_poster_width"
+        android:layout_height="@dimen/item_poster_height"
         android:layout_marginStart="?attr/spaceSmall"
         android:layout_marginTop="?attr/spaceSmall"
         android:layout_marginBottom="?attr/spaceSmall"

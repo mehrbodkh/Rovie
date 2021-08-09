@@ -32,7 +32,7 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/addDetailButton"
         android:layout_width="0dp"
-        android:layout_height="56dp"
+        android:layout_height="?attr/buttonHeightLarge"
         android:layout_marginStart="?attr/spaceLarge"
         android:layout_marginEnd="?attr/spaceLarge"
         android:layout_marginBottom="?attr/spaceSmall"

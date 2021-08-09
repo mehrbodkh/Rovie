@@ -20,5 +20,7 @@
         <item name="spaceXLarge">24dp</item>
         <item name="space2XLarge">32dp</item>
         <item name="space3XLarge">40dp</item>
+
+        <item name="buttonHeightLarge">56dp</item>
     </style>
 </resources>
