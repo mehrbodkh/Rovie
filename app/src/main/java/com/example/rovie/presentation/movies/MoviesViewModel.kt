@@ -1,4 +1,4 @@
-package com.example.rovie.movies
+package com.example.rovie.presentation.movies
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

@@ -1,4 +1,4 @@
-package com.example.rovie.data.repository
+package com.example.rovie.data.datasource
 
 import com.example.rovie.data.models.Movie
 import com.example.rovie.data.models.MovieDetails

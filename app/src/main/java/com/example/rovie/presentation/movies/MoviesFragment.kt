@@ -1,4 +1,4 @@
-package com.example.rovie.movies
+package com.example.rovie.presentation.movies
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -10,11 +10,10 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.rovie.R
 import com.example.rovie.data.models.Movie
 import com.example.rovie.databinding.MoviesFragmentBinding
-import com.example.rovie.moviedetails.MovieDetailFragment
+import com.example.rovie.presentation.moviedetails.MovieDetailFragment
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch

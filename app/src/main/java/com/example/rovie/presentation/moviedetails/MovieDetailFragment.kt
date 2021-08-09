@@ -1,4 +1,4 @@
-package com.example.rovie.moviedetails
+package com.example.rovie.presentation.moviedetails
 
 import android.os.Bundle
 import android.view.LayoutInflater
