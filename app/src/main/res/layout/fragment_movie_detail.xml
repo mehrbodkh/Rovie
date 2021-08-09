@@ -44,7 +44,7 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
                 android:maxLines="2"
                 android:ellipsize="end"
-                android:layout_margin="@dimen/margin_medium"/>
+                android:layout_margin="?attr/spaceLarge"/>
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/genre"
@@ -53,8 +53,8 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                 android:maxLines="1"
                 android:ellipsize="end"
-                android:layout_marginEnd="@dimen/margin_medium"
-                android:layout_marginStart="@dimen/margin_medium" />
+                android:layout_marginEnd="?attr/spaceLarge"
+                android:layout_marginStart="?attr/spaceLarge" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/rating"
@@ -63,16 +63,16 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                 android:maxLines="1"
                 android:ellipsize="end"
-                android:layout_marginEnd="@dimen/margin_medium"
-                android:layout_marginStart="@dimen/margin_medium" />
+                android:layout_marginEnd="?attr/spaceLarge"
+                android:layout_marginStart="?attr/spaceLarge" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/info"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:layout_marginEnd="@dimen/margin_medium"
-                android:layout_marginStart="@dimen/margin_medium" />
+                android:layout_marginEnd="?attr/spaceLarge"
+                android:layout_marginStart="?attr/spaceLarge" />
 
         </LinearLayout>
 
