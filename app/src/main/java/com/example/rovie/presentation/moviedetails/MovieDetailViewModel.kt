@@ -19,7 +19,7 @@ class MovieDetailViewModel @Inject constructor(
     private val _detailUIState = MutableStateFlow<DetailUIState>(DetailUIState.Loading)
     val detailUIState: StateFlow<DetailUIState> = _detailUIState
 
-    fun onViewCreated(movieId: String) {
+    fun onMovieIdExtracted(movieId: String) {
         viewModelScope.launch(Dispatchers.IO) {
             val details = movieRepo.getMovieDetails(movieId.toInt())
             _detailUIState.value = DetailUIState.Success(details)

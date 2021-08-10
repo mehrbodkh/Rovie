@@ -47,7 +47,7 @@ class MovieDetailFragment : Fragment() {
         viewModel = ViewModelProvider(this).get(MovieDetailViewModel::class.java)
 
         movieId?.let {
-            viewModel.onViewCreated(it)
+            viewModel.onMovieIdExtracted(it)
         }
 
         initObservers()

@@ -18,7 +18,7 @@ class MoviesViewModel @Inject constructor(private val movieRepo: MovieRepo) : Vi
     private val _moviesState = MutableStateFlow<LatestMoviesUIState>(LatestMoviesUIState.Loading)
     val moviesState: StateFlow<LatestMoviesUIState> = _moviesState
 
-    fun onViewCreated() {
+    init {
         viewModelScope.launch(Dispatchers.IO) {
             movieRepo.getLatestMovies().collect {
                 if (it.isNotEmpty()) {
