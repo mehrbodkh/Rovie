@@ -64,21 +64,21 @@ class MovieDetailFragment : Fragment() {
         }
     }
 
-    private fun showLoading() {
-        binding.progressBar.visibility = View.VISIBLE
-        binding.contentScrollView.visibility = View.GONE
+    private fun showLoading() = with(binding) {
+        progressBar.visibility = View.VISIBLE
+        contentScrollView.visibility = View.GONE
     }
 
-    private fun showDetails(movieDetails: MovieDetails) {
-        binding.progressBar.visibility = View.GONE
-        binding.contentScrollView.visibility = View.VISIBLE
-        binding.title.text = movieDetails.title
-        binding.genre.text = movieDetails.genres.toString()
-        binding.rating.text = movieDetails.imdb_rating.toString()
-        binding.info.text = movieDetails.plot
+    private fun showDetails(movieDetails: MovieDetails) = with(binding) {
+        progressBar.visibility = View.GONE
+        contentScrollView.visibility = View.VISIBLE
+        title.text = movieDetails.title
+        genre.text = movieDetails.genres.toString()
+        rating.text = movieDetails.imdb_rating.toString()
+        info.text = movieDetails.plot
         Picasso.get()
             .load(movieDetails.images[0])
-            .into(binding.photo)
+            .into(photo)
     }
 
     override fun onDestroy() {

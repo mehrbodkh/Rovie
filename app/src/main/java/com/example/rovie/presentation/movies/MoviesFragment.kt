@@ -53,12 +53,10 @@ class MoviesFragment : Fragment() {
         initRecyclerView()
     }
 
-    private fun initRecyclerView() {
-        with(binding.moviesList) {
-            adapter = moviesAdapter
-            layoutManager = LinearLayoutManager(context)
-            addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
-        }
+    private fun initRecyclerView() = with(binding.moviesList) {
+        adapter = moviesAdapter
+        layoutManager = LinearLayoutManager(context)
+        addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
     }
 
     private fun initObservers() {
@@ -77,14 +75,14 @@ class MoviesFragment : Fragment() {
         }
     }
 
-    private fun showLoading() {
-        binding.moviesList.visibility = View.GONE
-        binding.progressBar.visibility = View.VISIBLE
+    private fun showLoading() = with(binding) {
+        moviesList.visibility = View.GONE
+        progressBar.visibility = View.VISIBLE
     }
 
-    private fun showMovies(movies: List<Movie>) {
-        binding.progressBar.visibility = View.GONE
-        binding.moviesList.visibility = View.VISIBLE
+    private fun showMovies(movies: List<Movie>) = with(binding) {
+        progressBar.visibility = View.GONE
+        moviesList.visibility = View.VISIBLE
         moviesAdapter.submitList(movies)
     }
 
